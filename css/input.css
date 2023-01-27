@@ -13,33 +13,68 @@ body {
   background: var(--grdient1);
 }
 .header {
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.7rem;
 }
 form {
   width: 100%;
 }
 input {
   border: 1px solid transparent;
-  background: transparent;
-  flex: 1 0 auto;
 }
-/* input::placeholder {
-  color: red;
-} */
+.error-img {
+  position: absolute;
+  visibility: hidden;
+  top: 50%;
+  right: 25%;
+  transform: translate(0, -50%);
+}
+.error-message {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translate(0, 0%);
+  visibility: hidden;
+}
+.active {
+  visibility: visible;
+}
 button {
   position: absolute;
   right: 0;
   top: 0;
   transform: translate(1%, -1%);
+  filter: drop-shadow(0px 20px 5px rgba(191, 12, 12, 0.086));
+  transition: all 50ms linear;
+}
+button:hover {
+  filter: drop-shadow(0px 20px 8px rgba(142, 5, 5, 0.176));
 }
 .btn-img {
   background: var(--gradient2);
 }
+
 /* footer */
-.attribution {
-  font-size: 11px;
-  text-align: center;
+footer {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  min-width: 250px;
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
+@media (min-width: 768px) {
+  body {
+    background: url(../images/bg-pattern-desktop.svg);
+  }
+  .desktop-img {
+    background: url(../images/hero-desktop.jpg) no-repeat;
+    background-size: auto;
+  }
+  form {
+    width: 80%;
+  }
+}
+@media (min-width: 1400px) {
+  form {
+    width: 60%;
+  }
 }

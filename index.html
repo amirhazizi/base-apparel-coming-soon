@@ -14,28 +14,50 @@
     <link rel="stylesheet" href="./css/fonts.css" />
     <title>Frontend Mentor | Base Apparel coming soon page</title>
   </head>
-  <body class="min-h-screen">
+  <body>
     <main>
-      <div class="flex flex-col lg:flex-row-reverse lg:h-screen">
-        <div class="space-y-4 w-screen flex flex-col justify-center">
-          <img class="p-9 py-4 w-44 mt-4" src="./images/logo.svg" alt="" />
-          <img class="mx-auto w-screen" src="./images/hero-mobile.jpg" alt="" />
+      <div class="flex flex-col md:flex-row-reverse items-center">
+        <div
+          class="desktop-img space-y-4 w-screen flex flex-col md:w-2/3 lg:w-1/2 md:min-h-screen"
+        >
+          <img
+            class="p-9 py-4 w-44 mt-4 md:hidden"
+            src="./images/logo.svg"
+            alt=""
+          />
+          <img
+            class="mx-auto w-screen md:hidden"
+            src="./images/hero-mobile.jpg"
+            alt=""
+          />
         </div>
-        <div class="flex flex-col text-center py-16 px-8 lg:justify-center">
+        <div
+          class="flex flex-col text-center py-16 px-8 lg:justify-center md:w-2/3 lg:w-2/3 md:text-left md:px-10 lg:py-0 lg:pl-32"
+        >
+          <img
+            class="w-44 mt-4 hidden md:block md:relative -top-32"
+            src="./images/logo.svg"
+            alt=""
+          />
           <h1
-            class="header text-4xl uppercase font-bold text-cl_DarkGrayishRed"
+            class="header text-4xl uppercase font-bold text-cl_DarkGrayishRed md:text-7xl"
           >
             <span class="text-cl_DesaturatedRed font-light">We're</span> coming
             soon
           </h1>
-          <p class="text-cl_DesaturatedRed text-sm mt-4">
+          <p
+            class="text-cl_DesaturatedRed text-sm mt-4 md:max-w-sm md:mt-4 md:leading-7"
+          >
             Hello fellow shoppers! We're currently building our new fashion
             store. Add your email below to stay up-to-date with announcements
             and our launch deals.
           </p>
-          <form action="" class="flex mx-auto relative max-w-md mt-8">
+          <form
+            action=""
+            class="flex mx-auto relative max-w-md mt-8 md:mx-0 md:mt-10"
+          >
             <input
-              class="rounded-full border-cl_DarkGrayishRed py-3 px-6 placeholder:text-cl_DesaturatedRed placeholder:opacity-50 border-opacity-30"
+              class="rounded-full border-cl_DarkGrayishRed py-3 px-6 placeholder:text-cl_DesaturatedRed placeholder:opacity-50 border-opacity-30 bg-transparent flex-auto focus:outline-cl_SoftRed"
               type="email"
               placeholder="Email Address"
             />
@@ -43,20 +65,32 @@
               <img
                 src="./images/icon-arrow.svg"
                 alt=""
-                class="btn-img py-4 px-7 drop-shadow-lg rounded-full"
+                class="btn-img py-4 px-7 drop-shadow-lg rounded-full md:px-10 hover:brightness-125"
               />
             </button>
+            <img src="./images/icon-error.svg" alt="" class="error-img" />
+            <p
+              class="error-message text-cl_SoftRed pl-4 mt-2 opacity-50 text-sm"
+            >
+              Please provide a valid email
+            </p>
           </form>
         </div>
       </div>
     </main>
 
     <footer>
-      <p class="attribution">
+      <p
+        class="text-center bg-white text-xs py-1 px-2 rounded-t-xl drop-shadow-lg"
+      >
         Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          class="font-bold text-cl_SoftRed"
+          target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by
+        <a class="font-bold text-cl_SoftRed" href="#">Your Name Here</a>.
       </p>
     </footer>
   </body>
