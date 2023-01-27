@@ -1,7 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* gradient */
+:root {
+  --grdient1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  --gradient2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+/* ### Gradients
+- Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) */
+body {
+  background: var(--grdient1);
+}
+.header {
+  letter-spacing: 0.5rem;
+}
+form {
+  width: 100%;
+}
+input {
+  border: 1px solid transparent;
+  background: transparent;
+  flex: 1 0 auto;
+}
+/* input::placeholder {
+  color: red;
+} */
+button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(1%, -1%);
+}
+.btn-img {
+  background: var(--gradient2);
+}
 /* footer */
 .attribution {
   font-size: 11px;

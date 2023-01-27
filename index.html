@@ -10,12 +10,46 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <!-- font.css -->
+    <link rel="stylesheet" href="./css/fonts.css" />
     <title>Frontend Mentor | Base Apparel coming soon page</title>
   </head>
-  <body>
-    We're coming soon Hello fellow shoppers! We're currently building our new
-    fashion store. Add your email below to stay up-to-date with announcements
-    and our launch deals. Email Address
+  <body class="min-h-screen">
+    <main>
+      <div class="flex flex-col lg:flex-row-reverse lg:h-screen">
+        <div class="space-y-4 w-screen flex flex-col justify-center">
+          <img class="p-9 py-4 w-44 mt-4" src="./images/logo.svg" alt="" />
+          <img class="mx-auto w-screen" src="./images/hero-mobile.jpg" alt="" />
+        </div>
+        <div class="flex flex-col text-center py-16 px-8 lg:justify-center">
+          <h1
+            class="header text-4xl uppercase font-bold text-cl_DarkGrayishRed"
+          >
+            <span class="text-cl_DesaturatedRed font-light">We're</span> coming
+            soon
+          </h1>
+          <p class="text-cl_DesaturatedRed text-sm mt-4">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <form action="" class="flex mt-7 mx-auto relative max-w-md">
+            <input
+              class="rounded-full border-cl_DarkGrayishRed py-3 px-6 placeholder:text-cl_DesaturatedRed placeholder:opacity-50 border-opacity-30"
+              type="email"
+              placeholder="Email Address"
+            />
+            <button class="" type="submit">
+              <img
+                src="./images/icon-arrow.svg"
+                alt=""
+                class="btn-img py-4 px-7 drop-shadow-lg rounded-full"
+              />
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
 
     <footer>
       <p class="attribution">
