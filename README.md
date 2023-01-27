@@ -18,7 +18,7 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
 
 ### Live Site
 
-[Click Here](https://gleeful-marshmallow-822951.netlify.app/)
+[Click Here](https://glowing-brigadeiros-da1a4f.netlify.app/)
 
 ### Built with
 
