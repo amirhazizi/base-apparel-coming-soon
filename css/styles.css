@@ -737,8 +737,8 @@ input {
   position: absolute;
   visibility: hidden;
   top: 50%;
-  right: 25%;
-  transform: translate(0, -50%);
+  left: -50%;
+  transform: translate(-50%, -50%);
 }
 
 .error-message {
@@ -782,7 +782,7 @@ footer {
 
 @media (min-width: 768px) {
   body {
-    background: url(../images/bg-pattern-desktop.svg);
+    background: url(../images/bg-pattern-desktop.svg) no-repeat;
   }
 
   .desktop-img {
@@ -793,9 +793,14 @@ footer {
   form {
     width: 80%;
   }
+
+  .error-img {
+    left: -40%;
+    transform: translate(0, -50%);
+  }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 976px) {
   form {
     width: 60%;
   }
